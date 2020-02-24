@@ -24,3 +24,12 @@ body {
   margin-left: 12px;
   font-size: 20px;
 }
+
+form {
+  border: thin solid #ddd;
+  background-color: #fbfbfb;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}

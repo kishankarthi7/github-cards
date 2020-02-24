@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 import PersonList from './components/PersonList';
@@ -23,11 +23,17 @@ const testData = [
 ];
 
 function App(props) {
+  const [profiles, setProfiles] = useState(testData);
+
+  const addToPersonList = personsDataResponse => {
+    setProfiles(); // modify here
+  };
+
   return (
     <div className="flex-container">
       <h1>{props.heading}</h1>
-      <AddPerson />
-      <PersonList profiles={testData} />
+      <AddPerson addToPersonList={addToPersonList} />
+      <PersonList profiles={profiles} />
     </div>
   );
 }
