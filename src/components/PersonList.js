@@ -6,7 +6,7 @@ function PersonList(props) {
   return (
     <div>
       {props.profiles.map(person => (
-        <Person {...person} />
+        <Person key={person.id} {...person} />
       ))}
     </div>
   );
