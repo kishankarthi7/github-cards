@@ -1,4 +1,4 @@
-Simple application to display a card showing a developer and followed by his details.
+Simple application to display a card showing a developer and followed by his details. If the details are found in the data provided by an api.
 
 ## Available Scripts
 
